@@ -6,7 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body style="padding-bottom: 500px;">
+    <form action="index.html" method="post">
+        <input type="text" name="username" placeholder="Kullanıcı adı""> <br><br>
+        <input type="password" name="password" placeholder="Şifre"><br><br>
+        <input type="number" name="yas"><br><br>
+
+        <p>Bir tane seçiniz (Radio button)</p>
+        <input type="radio" name="renk" id="renk1" checked="    checked"><label for="renk1">Kırmızı</label>
+        <input type="radio" name="renk" id="renk2"><label for="renk2">Yeşil</label>
+        <input type="radio" name="renk" id="renk3"><label for="renk3">Sarı</label>
+        <input type="radio" name="renk" id="renk4"><label for="renk4">Mavi</label>
+        <input type="radio" name="renk" id="renk5"><label for="renk5">Siyah</label>
+
+        <p>Bir kaç tane seçiniz (Checkbox)</p>
+        <input type="checkbox" name="secenek1" id="sec1"><label for="sec1">Seçenek 1</label>
+        <input type="checkbox" name="secenek1" id="sec2"><label for="sec2">Seçenek 2</label>
+        <input type="checkbox" name="secenek1" id="sec3"><label for="sec3">Seçenek 3</label>
+        <input type="checkbox" name="secenek1" id="sec4"><label for="sec4">Seçenek 4</label>
+
+        <p>Tarih seçiniz</p>
+        <input type="date" name="tarih">
+        <input type="time" name="saat">
+
+        <p>Dosya ekleyiniz</p>
+        <input type="file" name="dosya">
+
+        <p>Yazı alanı (textarea)</p>
+        <textarea name="yazialani" style="width: 300px;" placeholder="Bir şeyler yazınız"></textarea>
+
+        <p>Aşağıdan bir şey seçiniz</p>
+        <select name="Secim" id="secim">
+            <option value="secim1">Seçim 1</option>
+            <option value="secim2" selected="selected">Seçim 2</option>
+            <option value="secim3">Seçim 3</option>
+        </select>
+
+        <p>Submit</p>
+        <input type="submit" name="gonder" value="Gönder">
+    </form>
 </body>
 </html>
